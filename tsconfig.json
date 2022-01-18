@@ -14,6 +14,7 @@
       "utils/*": ["./utils/*"],
       "hooks/*": ["./hooks/*"]
     },
+    "types": ["@emotion/react/types/css-prop"],
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
