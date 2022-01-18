@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
-import { IconBar } from 'components/Main/IconBar';
+import { IconBar } from 'components/Common/Header/IconBar';
 
 const Container = styled.header`
   position: fixed;
