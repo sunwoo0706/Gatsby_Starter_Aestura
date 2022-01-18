@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+import { ArticleList } from './ArticleList';
 import { CategoryList } from './CategotyList';
 
 const MainStyle = css`
@@ -17,6 +18,7 @@ export const Main: React.FC = () => {
     <main css={MainStyle}>
       <section css={SectionStyle}>
         <CategoryList />
+        <ArticleList />
       </section>
     </main>
   );
