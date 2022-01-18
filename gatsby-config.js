@@ -6,7 +6,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-typescript",
+      resolve: 'gatsby-plugin-typescript',
       options: {
         isTSX: true,
         allExtensions: true,
@@ -26,4 +26,4 @@ module.exports = {
     // To learn more, visit: <https://gatsby.dev/offline>
     // `gatsby-plugin-offline`,
   ],
-}
+};
