@@ -3,8 +3,10 @@ import { css } from '@emotion/react';
 import { IconBar } from 'components/Common/Header/IconBar';
 
 const Container = styled.header`
-  position: fixed;
+  position: sticky;
+  background: white;
   top: 0;
+  z-index: 100;
   width: 100%;
   height: 6.25rem;
   display: grid;
@@ -14,7 +16,7 @@ const Container = styled.header`
 const NavStyle = css`
   width: 100%;
   height: inherit;
-  max-width: 1000px;
+  max-width: 62.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
