@@ -1,10 +1,12 @@
 import GlobalStyle from 'components/Common/GlobalStyle';
+import { Header } from 'components/Common/Header';
 
 const IndexPage: React.FC = () => {
   return (
-    <main>
+    <div>
       <GlobalStyle />
-    </main>
+      <Header />
+    </div>
   );
 };
 
