@@ -7,6 +7,8 @@ const CategoryListStyle = css`
   display: flex;
   gap: 0.75rem;
   height: fit-content;
+  background: white;
+  box-shadow: rgb(255, 255, 255) 0 10px 12px 6px;
   overflow: scroll;
   &::-webkit-scrollbar {
     display: none;
