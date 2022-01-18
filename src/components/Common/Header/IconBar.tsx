@@ -2,10 +2,10 @@ import { css } from '@emotion/react';
 import { GithubIcon, LinkedInIcon, TwitterIcon } from 'components/Asset';
 
 const IconBarStyle = css`
-  height: 30px;
+  height: 1.875rem;
   display: flex;
   justify-content: space-between;
-  gap: 14px;
+  gap: 0.875rem;
 `;
 
 export const IconBar: React.FC = () => {
