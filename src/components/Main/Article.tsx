@@ -1,10 +1,12 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
+import { Link } from 'gatsby';
 
 interface ArticleProps {
   title: string;
-  previewContent: string;
+  summary: string;
   date: string;
+  link: string;
 }
 
 const Container = styled.article`
@@ -42,16 +44,19 @@ const DateStyle = css`
 
 export const Article: React.FC<ArticleProps> = ({
   title,
-  previewContent,
+  summary,
   date,
+  link,
 }) => {
   return (
-    <Container>
-      <h2 css={H2Style}>{title}</h2>
-      <p css={PreviewStyle}>{previewContent}</p>
-      <p css={DateStyle}>
-        <time dateTime={date}>{date.replace(/-/g, '. ')}</time>
-      </p>
-    </Container>
+    <Link to={link}>
+      <Container>
+        <h2 css={H2Style}>{title}</h2>
+        <p css={PreviewStyle}>{summary}</p>
+        <p css={DateStyle}>
+          <time dateTime={date}>{date.replace(/-/g, '. ')}</time>
+        </p>
+      </Container>
+    </Link>
   );
 };

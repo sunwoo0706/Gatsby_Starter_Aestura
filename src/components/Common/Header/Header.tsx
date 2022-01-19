@@ -16,7 +16,7 @@ const Container = styled.header`
 const NavStyle = css`
   width: 100%;
   height: inherit;
-  max-width: 62.5rem;
+  max-width: 50rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

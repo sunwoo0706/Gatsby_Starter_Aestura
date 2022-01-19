@@ -1,5 +1,6 @@
 import { css } from '@emotion/react';
 import { CategoryTag } from './CategoryTag';
+import { CategoryListProps } from 'utils/Type';
 
 const CategoryListStyle = css`
   position: sticky;
@@ -15,11 +16,19 @@ const CategoryListStyle = css`
   }
 `;
 
-export const CategoryList: React.FC = () => {
+export const CategoryList: React.FC<CategoryListProps> = ({
+  categoryList,
+  selectedCategory,
+}) => {
   return (
     <div css={CategoryListStyle}>
-      {[...Array(16)].map((n, idx) => (
-        <CategoryTag />
+      {Object.entries(categoryList).map(([name, cnt], i) => (
+        <CategoryTag
+          name={name}
+          selected={name === selectedCategory}
+          cnt={cnt}
+          key={i}
+        />
       ))}
     </div>
   );
