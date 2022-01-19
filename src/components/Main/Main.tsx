@@ -30,7 +30,7 @@ export const Main: React.FC<MainProps> = ({
           selectedCategory={selectedCategory}
           categoryList={categoryList}
         />
-        <ArticleList articles={articles} />
+        <ArticleList selectedCategory={selectedCategory} articles={articles} />
       </section>
     </main>
   );
