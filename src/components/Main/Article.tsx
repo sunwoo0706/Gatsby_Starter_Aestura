@@ -1,11 +1,9 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 import { Link } from 'gatsby';
+import { ArticleFrontmatterType } from 'Utils/Type';
 
-interface ArticleProps {
-  title: string;
-  summary: string;
-  date: string;
+interface ArticleProps extends ArticleFrontmatterType {
   link: string;
 }
 
@@ -46,6 +44,7 @@ export const Article: React.FC<ArticleProps> = ({
   title,
   summary,
   date,
+  categories,
   link,
 }) => {
   return (

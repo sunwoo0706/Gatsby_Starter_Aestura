@@ -1,9 +1,11 @@
 import { css } from '@emotion/react';
 import { ArticleList } from './ArticleList';
 import { CategoryList } from './CategotyList';
-import { CategoryListProps } from 'utils/Type';
+import { CategoryListProps, ArticleType } from 'utils/Type';
 
-interface MainProps extends CategoryListProps {}
+interface MainProps extends CategoryListProps {
+  articles: ArticleType[];
+}
 
 const MainStyle = css`
   width: 100%;
@@ -19,6 +21,7 @@ const SectionStyle = css`
 export const Main: React.FC<MainProps> = ({
   selectedCategory,
   categoryList,
+  articles,
 }) => {
   return (
     <main css={MainStyle}>
@@ -27,7 +30,7 @@ export const Main: React.FC<MainProps> = ({
           selectedCategory={selectedCategory}
           categoryList={categoryList}
         />
-        <ArticleList />
+        <ArticleList articles={articles} />
       </section>
     </main>
   );

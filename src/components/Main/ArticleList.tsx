@@ -1,13 +1,10 @@
 import styled from '@emotion/styled';
 import { Article } from './Article';
+import { ArticleType } from 'utils/Type';
 
-const ArticleDummyData = {
-  title: '2021년 회고',
-  summary:
-    '키보드에 없는 한글의 가운데 점(·) 문자를 어떻게 입력하시나요? 특수문자 입력하는 걸 그리 좋아하지 않는데, 자꾸 그럴 일이 생깁니다.',
-  date: '2004-07-06',
-  link: 'https://github.com/sunwoo0706',
-};
+interface ArticleListProps {
+  articles: ArticleType[];
+}
 
 const ArticleSection = styled.section`
   display: grid;
@@ -16,18 +13,12 @@ const ArticleSection = styled.section`
   gap: 4rem;
 `;
 
-export const ArticleList: React.FC = () => {
+export const ArticleList: React.FC<ArticleListProps> = ({ articles }) => {
   return (
     <ArticleSection>
-      <Article {...ArticleDummyData} />
-      <Article {...ArticleDummyData} />
-      <Article {...ArticleDummyData} />
-      <Article {...ArticleDummyData} />
-      <Article {...ArticleDummyData} />
-      <Article {...ArticleDummyData} />
-      <Article {...ArticleDummyData} />
-      <Article {...ArticleDummyData} />
-      <Article {...ArticleDummyData} />
+      {articles.map(({ node: { id, frontmatter } }: ArticleType) => (
+        <Article {...frontmatter} link="https://github.com" key={id} />
+      ))}
     </ArticleSection>
   );
 };
