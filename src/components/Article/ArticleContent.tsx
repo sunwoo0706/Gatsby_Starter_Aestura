@@ -88,6 +88,10 @@ const MarkdownRenderer = styled.div`
     word-break: break-word;
   }
 
+  img {
+    width: 100%;
+  }
+
   // Adjust Code Style
   pre[class*='language-'] {
     margin: 1.875rem 0;
