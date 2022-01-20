@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 import { ArticleHeader } from 'components/Article/ArticleHeader';
 import ArticleContent from 'components/Article/ArticleContent';
 import { ArticleFrontmatterType } from 'shared/type';
+import CommentWidget from 'components/Article/CommentWidget';
 
 interface ArticlePageType {
   node: {
@@ -36,6 +37,7 @@ const ArticleTemplate: React.FC<ArticleTemplateProps> = ({
     <Container>
       <ArticleHeader title={title} date={date} categories={categories} />
       <ArticleContent html={html} />
+      <CommentWidget />
     </Container>
   );
 };
