@@ -56,7 +56,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-remark-smartypants", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.0"],
             ["gatsby-source-filesystem", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.2"],
             ["gatsby-transformer-remark", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.2"],
-            ["gatsby-transformer-sharp", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.0"],
             ["prettier", "npm:2.5.1"],
             ["prismjs", "npm:1.26.0"],
             ["prop-types", "npm:15.8.1"],
@@ -10966,7 +10965,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-remark-smartypants", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.0"],
             ["gatsby-source-filesystem", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.2"],
             ["gatsby-transformer-remark", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.2"],
-            ["gatsby-transformer-sharp", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.0"],
             ["prettier", "npm:2.5.1"],
             ["prismjs", "npm:1.26.0"],
             ["prop-types", "npm:15.8.1"],
@@ -11040,40 +11038,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "packagePeers": [
             "@types/gatsby",
-            "gatsby"
-          ],
-          "linkType": "HARD",
-        }]
-      ]],
-      ["gatsby-transformer-sharp", [
-        ["npm:4.5.0", {
-          "packageLocation": "./.yarn/cache/gatsby-transformer-sharp-npm-4.5.0-7c9ba0c7d8-210cd6b102.zip/node_modules/gatsby-transformer-sharp/",
-          "packageDependencies": [
-            ["gatsby-transformer-sharp", "npm:4.5.0"]
-          ],
-          "linkType": "SOFT",
-        }],
-        ["virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.0", {
-          "packageLocation": "./.yarn/__virtual__/gatsby-transformer-sharp-virtual-f773933fcb/0/cache/gatsby-transformer-sharp-npm-4.5.0-7c9ba0c7d8-210cd6b102.zip/node_modules/gatsby-transformer-sharp/",
-          "packageDependencies": [
-            ["gatsby-transformer-sharp", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.0"],
-            ["@babel/runtime", "npm:7.16.7"],
-            ["@types/gatsby", null],
-            ["@types/gatsby-plugin-sharp", null],
-            ["bluebird", "npm:3.7.2"],
-            ["common-tags", "npm:1.8.2"],
-            ["fs-extra", "npm:10.0.0"],
-            ["gatsby", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.3"],
-            ["gatsby-plugin-sharp", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.2"],
-            ["potrace", "npm:2.1.8"],
-            ["probe-image-size", "npm:6.0.0"],
-            ["semver", "npm:7.3.5"],
-            ["sharp", "npm:0.29.3"]
-          ],
-          "packagePeers": [
-            "@types/gatsby-plugin-sharp",
-            "@types/gatsby",
-            "gatsby-plugin-sharp",
             "gatsby"
           ],
           "linkType": "HARD",

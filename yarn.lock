@@ -7617,7 +7617,6 @@ __metadata:
     gatsby-remark-smartypants: ^5.5.0
     gatsby-source-filesystem: ^4.5.2
     gatsby-transformer-remark: ^5.5.2
-    gatsby-transformer-sharp: ^4.5.0
     prettier: ^2.5.1
     prismjs: ^1.26.0
     prop-types: ^15.8.0
@@ -7679,25 +7678,6 @@ __metadata:
   peerDependencies:
     gatsby: ^4.0.0-next
   checksum: b057993f558a67b15ae958100a00e6ac8080f59386998878b32a2564eccf73541139d10f8b61f10a24e319ff2da5bae89dab8bc7e29d0d0d14b72559d621594d
-  languageName: node
-  linkType: hard
-
-"gatsby-transformer-sharp@npm:^4.5.0":
-  version: 4.5.0
-  resolution: "gatsby-transformer-sharp@npm:4.5.0"
-  dependencies:
-    "@babel/runtime": ^7.15.4
-    bluebird: ^3.7.2
-    common-tags: ^1.8.2
-    fs-extra: ^10.0.0
-    potrace: ^2.1.8
-    probe-image-size: ^6.0.0
-    semver: ^7.3.5
-    sharp: ^0.29.3
-  peerDependencies:
-    gatsby: ^4.0.0-next
-    gatsby-plugin-sharp: ^4.0.0-next
-  checksum: 210cd6b102370d19f80aecb5749fddf03ded20730491762e377e4e4b6e7f19c41bb54ee88c6c4ca990e902f23163a139f6f2ec81e7937de0bf92c4eacf2d4f8a
   languageName: node
   linkType: hard
 
