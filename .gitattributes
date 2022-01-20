@@ -1,4 +1,15 @@
-gatsby-browser.js
-gatsby-config.js
-gatsby-node.js
-gatsby-ssr.js
+.vscode/* linguist-vendored
+contents/* linguist-vendored
+
+# gatsby
+
+gatsby-browser.js linguist-vendored
+gatsby-config.js linguist-vendored
+gatsby-node.js linguist-vendored
+gatsby-ssr.js linguist-vendored
+
+# yarn
+
+.pnp.cjs linguist-vendored
+.pnp.loader.mjs linguist-vendored
+.yarn/* linguist-vendored
