@@ -9,6 +9,9 @@ interface MainProps extends CategoryListProps {
 
 const MainStyle = css`
   width: 100%;
+  @media (max-width: 54rem) {
+    padding: 0 4vw;
+  }
 `;
 
 const SectionStyle = css`

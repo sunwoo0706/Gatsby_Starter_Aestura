@@ -11,6 +11,9 @@ const Container = styled.header`
   height: 6.25rem;
   display: grid;
   place-items: center;
+  @media (max-width: 54rem) {
+    padding: 0 4vw;
+  }
 `;
 
 const NavStyle = css`
