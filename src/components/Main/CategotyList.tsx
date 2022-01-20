@@ -9,8 +9,9 @@ const CategoryListStyle = css`
   gap: 0.75rem;
   height: fit-content;
   background: white;
-  box-shadow: rgb(255, 255, 255) 0 10px 12px 6px;
+  box-shadow: rgb(255, 255, 255) 0 0.625rem 0.75rem 0.375rem;
   overflow: scroll;
+  margin-top: 2.2rem;
   &::-webkit-scrollbar {
     display: none;
   }

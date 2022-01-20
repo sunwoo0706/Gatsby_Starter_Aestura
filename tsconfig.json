@@ -11,7 +11,7 @@
     "baseUrl": "./src",
     "paths": {
       "components/*": ["./components/*"],
-      "utils/*": ["./utils/*"],
+      "shared/*": ["./shared/*"],
       "hooks/*": ["./hooks/*"]
     },
     "types": ["@emotion/react/types/css-prop"],
@@ -20,6 +20,6 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true
   },
-  "include": ["src/**/*.tsx"],
+  "include": ["src/**/*.tsx", "src/**/*.ts"],
   "exclude": ["node_modules"]
 }

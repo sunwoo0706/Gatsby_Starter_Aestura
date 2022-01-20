@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
-import { IconBar } from 'components/Common/Header/IconBar';
+import { IconBar } from 'components/Common/Header/IconList';
+import { Link } from 'gatsby';
 
 const Container = styled.header`
   position: sticky;
@@ -16,7 +17,7 @@ const Container = styled.header`
   }
 `;
 
-const NavStyle = css`
+const Nav = styled.nav`
   width: 100%;
   height: inherit;
   max-width: 50rem;
@@ -36,10 +37,12 @@ const H1Style = css`
 export const Header: React.FC = () => {
   return (
     <Container>
-      <div css={NavStyle}>
-        <h1 css={H1Style}>{'이선우'}의 블로그</h1>
+      <Nav>
+        <Link to="/">
+          <h1 css={H1Style}>{'이선우'}의 블로그</h1>
+        </Link>
         <IconBar />
-      </div>
+      </Nav>
     </Container>
   );
 };

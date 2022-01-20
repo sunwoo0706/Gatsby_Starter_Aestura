@@ -18,7 +18,6 @@ const SectionStyle = css`
   width: 100%;
   max-width: 50rem;
   margin: 0 auto;
-  padding-top: 2.2rem;
 `;
 
 export const Container: React.FC<ContainerProps> = ({ children }) => {

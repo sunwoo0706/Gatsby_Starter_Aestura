@@ -1,5 +1,5 @@
 import { MutableRefObject, useRef, useState, useMemo, useEffect } from 'react';
-import { ArticleType } from 'shared/Type';
+import { ArticleType } from 'shared/type';
 
 export interface useInfiniteScrollType {
   containerRef: MutableRefObject<HTMLDivElement | null>;

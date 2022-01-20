@@ -8,7 +8,7 @@ export interface ArticleFrontmatterType {
 /**
  * Blog content type
  */
- export interface ArticleType {
+export interface ArticleType {
   node: {
     id: string
     fields: {
