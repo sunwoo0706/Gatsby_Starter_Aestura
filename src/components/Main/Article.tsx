@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
 import { Link } from 'gatsby';
-import { ArticleFrontmatterType } from 'Utils/Type';
+import { ArticleFrontmatterType } from 'shared/Type';
 
 interface ArticleProps extends ArticleFrontmatterType {
   link: string;

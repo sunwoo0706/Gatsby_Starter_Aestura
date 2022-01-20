@@ -1,10 +1,9 @@
-import GlobalStyle from 'components/Common/GlobalStyle';
-import { Header } from 'components/Common/Header';
 import { Main } from 'components/Main';
 import { ArticleType, CategoryListProps } from 'utils/Type';
 import { graphql } from 'gatsby';
 import queryString, { ParsedQuery } from 'query-string';
 import { useMemo } from 'react';
+import { Container } from 'components/Common/Container';
 
 interface IndexPageProps {
   location: {
@@ -55,15 +54,13 @@ const IndexPage: React.FC<IndexPageProps> = ({
   );
 
   return (
-    <div>
-      <GlobalStyle />
-      <Header />
+    <Container>
       <Main
         selectedCategory={selectedCategory}
         categoryList={categoryList}
         articles={edges}
       />
-    </div>
+    </Container>
   );
 };
 
@@ -75,6 +72,9 @@ export const getPostList = graphql`
       edges {
         node {
           id
+          fields {
+            slug
+          }
           frontmatter {
             title
             summary

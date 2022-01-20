@@ -26,9 +26,17 @@ export const ArticleList: React.FC<ArticleListProps> = ({
 
   return (
     <ArticleSection ref={containerRef}>
-      {articleList.map(({ node: { id, frontmatter } }: ArticleType) => (
-        <Article {...frontmatter} link="https://github.com" key={id} />
-      ))}
+      {articleList.map(
+        ({
+          node: {
+            id,
+            fields: { slug },
+            frontmatter,
+          },
+        }: ArticleType) => (
+          <Article {...frontmatter} link={slug} key={id} />
+        ),
+      )}
     </ArticleSection>
   );
 };

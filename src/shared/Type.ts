@@ -11,6 +11,9 @@ export interface ArticleFrontmatterType {
  export interface ArticleType {
   node: {
     id: string
+    fields: {
+      slug: string
+    }
     frontmatter: ArticleFrontmatterType
   }
 }
