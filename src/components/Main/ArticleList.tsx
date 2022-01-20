@@ -10,7 +10,7 @@ interface ArticleListProps {
 
 const ArticleSection = styled.section`
   display: grid;
-  grid-template-columns: repeat(auto-fit, 1fr);
+  grid-template-columns: 1fr;
   margin-top: 4rem;
   gap: 4rem;
 `;
