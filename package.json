@@ -9,6 +9,7 @@
     "@emotion/styled": "^11.6.0",
     "@types/react-helmet": "^6.1.5",
     "gatsby": "^4.5.3",
+    "gatsby-plugin-canonical-urls": "^4.5.0",
     "gatsby-plugin-emotion": "^7.5.0",
     "gatsby-plugin-image": "^2.5.2",
     "gatsby-plugin-offline": "^5.5.2",

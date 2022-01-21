@@ -13,6 +13,13 @@ module.exports = {
         allExtensions: true,
       },
     },
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://website-link.com/',
+        stripQueryString: true,
+      },
+    },
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     {
