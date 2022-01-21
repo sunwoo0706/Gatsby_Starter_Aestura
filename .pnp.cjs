@@ -50,6 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-offline", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.2"],
             ["gatsby-plugin-react-helmet", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.0"],
             ["gatsby-plugin-sharp", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.2"],
+            ["gatsby-plugin-sitemap", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.0"],
             ["gatsby-plugin-typescript", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.2"],
             ["gatsby-remark-copy-linked-files", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.0"],
             ["gatsby-remark-external-links", "npm:0.0.4"],
@@ -4677,6 +4678,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/node", [
+        ["npm:17.0.10", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-17.0.10-c0e46c1462-979e83d642.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:17.0.10"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:17.0.9", {
           "packageLocation": "./.yarn/cache/@types-node-npm-17.0.9-30fa625e34-64a1fa9197.zip/node_modules/@types/node/",
           "packageDependencies": [
@@ -4787,6 +4795,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@types/rimraf", "npm:2.0.5"],
             ["@types/glob", "npm:7.2.0"],
+            ["@types/node", "npm:17.0.9"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/sax", [
+        ["npm:1.2.4", {
+          "packageLocation": "./.yarn/cache/@types-sax-npm-1.2.4-559564fa4f-2aa50cbf1d.zip/node_modules/@types/sax/",
+          "packageDependencies": [
+            ["@types/sax", "npm:1.2.4"],
             ["@types/node", "npm:17.0.9"]
           ],
           "linkType": "HARD",
@@ -5769,6 +5787,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/arg-npm-4.1.3-1748b966a8-544af8dd3f.zip/node_modules/arg/",
           "packageDependencies": [
             ["arg", "npm:4.1.3"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:5.0.1", {
+          "packageLocation": "./.yarn/cache/arg-npm-5.0.1-297491f918-9aefbcb120.zip/node_modules/arg/",
+          "packageDependencies": [
+            ["arg", "npm:5.0.1"]
           ],
           "linkType": "HARD",
         }]
@@ -10719,6 +10744,40 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["gatsby-plugin-sitemap", [
+        ["npm:5.5.0", {
+          "packageLocation": "./.yarn/cache/gatsby-plugin-sitemap-npm-5.5.0-a91053d643-1675d76b25.zip/node_modules/gatsby-plugin-sitemap/",
+          "packageDependencies": [
+            ["gatsby-plugin-sitemap", "npm:5.5.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.0", {
+          "packageLocation": "./.yarn/__virtual__/gatsby-plugin-sitemap-virtual-6f141f3e74/0/cache/gatsby-plugin-sitemap-npm-5.5.0-a91053d643-1675d76b25.zip/node_modules/gatsby-plugin-sitemap/",
+          "packageDependencies": [
+            ["gatsby-plugin-sitemap", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.0"],
+            ["@babel/runtime", "npm:7.16.7"],
+            ["@types/gatsby", null],
+            ["@types/react", null],
+            ["@types/react-dom", null],
+            ["common-tags", "npm:1.8.2"],
+            ["gatsby", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.3"],
+            ["minimatch", "npm:3.0.4"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:17.0.2"],
+            ["sitemap", "npm:7.1.0"]
+          ],
+          "packagePeers": [
+            "@types/gatsby",
+            "@types/react-dom",
+            "@types/react",
+            "gatsby",
+            "react-dom",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["gatsby-plugin-typescript", [
         ["npm:4.5.2", {
           "packageLocation": "./.yarn/cache/gatsby-plugin-typescript-npm-4.5.2-1fbbd0bd37-b8b7a59291.zip/node_modules/gatsby-plugin-typescript/",
@@ -10994,6 +11053,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-offline", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.2"],
             ["gatsby-plugin-react-helmet", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.0"],
             ["gatsby-plugin-sharp", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.2"],
+            ["gatsby-plugin-sitemap", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.0"],
             ["gatsby-plugin-typescript", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.2"],
             ["gatsby-remark-copy-linked-files", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.0"],
             ["gatsby-remark-external-links", "npm:0.0.4"],
@@ -18198,6 +18258,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/sisteransi-npm-1.0.5-af60cc0cfa-aba6438f46.zip/node_modules/sisteransi/",
           "packageDependencies": [
             ["sisteransi", "npm:1.0.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["sitemap", [
+        ["npm:7.1.0", {
+          "packageLocation": "./.yarn/cache/sitemap-npm-7.1.0-52215f2806-2dd4deb78c.zip/node_modules/sitemap/",
+          "packageDependencies": [
+            ["sitemap", "npm:7.1.0"],
+            ["@types/node", "npm:17.0.10"],
+            ["@types/sax", "npm:1.2.4"],
+            ["arg", "npm:5.0.1"],
+            ["sax", "npm:1.2.4"]
           ],
           "linkType": "HARD",
         }]

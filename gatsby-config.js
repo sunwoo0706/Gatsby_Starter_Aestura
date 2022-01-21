@@ -7,6 +7,12 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        output: '/',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-typescript',
       options: {
         isTSX: true,
