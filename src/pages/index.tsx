@@ -10,6 +10,13 @@ interface IndexPageProps {
     search: string;
   };
   data: {
+    site: {
+      siteMetadata: {
+        title: string;
+        description: string;
+        siteUrl: string;
+      };
+    };
     allMarkdownRemark: {
       edges: ArticleType[];
     };
@@ -19,6 +26,9 @@ interface IndexPageProps {
 const IndexPage: React.FC<IndexPageProps> = ({
   location: { search },
   data: {
+    site: {
+      siteMetadata: { title, description, siteUrl },
+    },
     allMarkdownRemark: { edges },
   },
 }) => {
@@ -54,7 +64,7 @@ const IndexPage: React.FC<IndexPageProps> = ({
   );
 
   return (
-    <Container>
+    <Container title={title} description={description} url={siteUrl}>
       <Main
         selectedCategory={selectedCategory}
         categoryList={categoryList}
@@ -66,6 +76,13 @@ const IndexPage: React.FC<IndexPageProps> = ({
 
 export const getPostList = graphql`
   query getPostList {
+    site {
+      siteMetadata {
+        title
+        description
+        siteUrl
+      }
+    }
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date, frontmatter___title] }
     ) {

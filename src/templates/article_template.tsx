@@ -13,11 +13,13 @@ interface ArticlePageType {
 }
 
 interface ArticleTemplateProps {
-  children: React.ReactNode;
   data: {
     allMarkdownRemark: {
       edges: ArticlePageType[];
     };
+  };
+  location: {
+    href: string;
   };
 }
 
@@ -25,6 +27,7 @@ const ArticleTemplate: React.FC<ArticleTemplateProps> = ({
   data: {
     allMarkdownRemark: { edges },
   },
+  location: { href },
 }) => {
   const {
     node: {
@@ -34,7 +37,7 @@ const ArticleTemplate: React.FC<ArticleTemplateProps> = ({
   } = edges[0];
 
   return (
-    <Container>
+    <Container title={title} description={summary} url={href}>
       <ArticleHeader title={title} date={date} categories={categories} />
       <ArticleContent html={html} />
       <CommentWidget />

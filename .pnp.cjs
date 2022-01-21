@@ -37,6 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@emotion/react", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:11.7.1"],
             ["@emotion/styled", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:11.6.0"],
+            ["@types/react-helmet", "npm:6.1.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.10.0"],
             ["@typescript-eslint/parser", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.10.0"],
             ["eslint", "npm:8.7.0"],
@@ -4755,6 +4756,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prop-types", "npm:15.7.4"],
             ["@types/scheduler", "npm:0.16.2"],
             ["csstype", "npm:3.0.10"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/react-helmet", [
+        ["npm:6.1.5", {
+          "packageLocation": "./.yarn/cache/@types-react-helmet-npm-6.1.5-f6dfe85617-d059cc084d.zip/node_modules/@types/react-helmet/",
+          "packageDependencies": [
+            ["@types/react-helmet", "npm:6.1.5"],
+            ["@types/react", "npm:17.0.38"]
           ],
           "linkType": "HARD",
         }]
@@ -10630,7 +10641,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-plugin-react-helmet", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.5.0"],
             ["@babel/runtime", "npm:7.16.7"],
             ["@types/gatsby", null],
-            ["@types/react-helmet", null],
+            ["@types/react-helmet", "npm:6.1.5"],
             ["gatsby", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:4.5.3"],
             ["react-helmet", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:6.1.0"]
           ],
@@ -10946,6 +10957,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["gatsby-starter-default", "workspace:."],
             ["@emotion/react", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:11.7.1"],
             ["@emotion/styled", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:11.6.0"],
+            ["@types/react-helmet", "npm:6.1.5"],
             ["@typescript-eslint/eslint-plugin", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.10.0"],
             ["@typescript-eslint/parser", "virtual:84c032af55cd4f9babf8db692292633aff00e2f68404beff67de9f7c9cd186f75ede955d237efe6d9cc7b184678d07f18ad56aa70680cd8c62a803875851f125#npm:5.10.0"],
             ["eslint", "npm:8.7.0"],
