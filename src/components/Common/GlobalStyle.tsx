@@ -1,7 +1,10 @@
 import { Global, css } from '@emotion/react';
+import { codeHighlighTheme } from 'shared/codeHighlighting';
 
 const defaultStyle = css`
   @import url('http://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css');
+
+  ${codeHighlighTheme}
 
   * {
     padding: 0;
