@@ -27,3 +27,12 @@ export interface CategoryListProps {
       [key: string]: number;
     };
 }
+
+/**
+ * Social Id types
+ */
+export interface SocialIdType {
+  githubId: string | null
+  linkedInId: string | null
+  twitterId: string | null
+}

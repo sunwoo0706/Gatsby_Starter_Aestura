@@ -1,9 +1,11 @@
 import { css } from '@emotion/react';
 import { Helmet } from 'react-helmet';
+import { SocialIdType } from 'shared/type';
 import GlobalStyle from './GlobalStyle';
 import { Header } from './Header';
 
-interface ContainerProps {
+interface ContainerProps extends SocialIdType {
+  siteTitle: string;
   title: string;
   description: string;
   url: string;
@@ -23,9 +25,13 @@ const SectionStyle = css`
 `;
 
 export const Container: React.FC<ContainerProps> = ({
+  siteTitle,
   title,
   description,
   url,
+  githubId,
+  linkedInId,
+  twitterId,
   children,
 }) => {
   return (
@@ -48,13 +54,18 @@ export const Container: React.FC<ContainerProps> = ({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         {/* <meta name="twitter:image" content={image} /> */}
-        <meta name="twitter:site" content="@사용자이름" />
-        <meta name="twitter:creator" content="@사용자이름" />
+        <meta name="twitter:site" content={`@${twitterId}`} />
+        <meta name="twitter:creator" content={`@${twitterId}`} />
 
         <html lang="ko" />
       </Helmet>
       <GlobalStyle />
-      <Header />
+      <Header
+        githubId={githubId}
+        linkedInId={linkedInId}
+        twitterId={twitterId}
+        title={siteTitle}
+      />
       <main css={MainStyle}>
         <section css={SectionStyle}>{children}</section>
       </main>

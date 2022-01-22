@@ -1,9 +1,12 @@
 import { createRef, useEffect } from 'react';
 
 const src = 'https://utteranc.es/client.js';
-const repo = '[username]/[username].github.io'; // 본인 계정의 레포지토리로 설정
 
-type UtterancesAttributesType = {
+interface CommentWidgetProps {
+  repo: string;
+}
+
+interface UtterancesAttributesType {
   src: string;
   repo: string;
   'issue-term': string;
@@ -11,13 +14,13 @@ type UtterancesAttributesType = {
   theme: string;
   crossorigin: string;
   async: string;
-};
+}
 
-const CommentWidget: React.FC = function () {
+const CommentWidget: React.FC<CommentWidgetProps> = ({ repo }) => {
   const element = createRef<HTMLDivElement>();
 
   useEffect(() => {
-    if (element.current === null) return;
+    if (element.current === null || repo === null) return;
 
     const utterances: HTMLScriptElement = document.createElement('script');
 

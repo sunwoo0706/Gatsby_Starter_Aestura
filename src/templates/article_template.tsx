@@ -2,8 +2,13 @@ import { Container } from 'components/Common/Container';
 import { graphql } from 'gatsby';
 import { ArticleHeader } from 'components/Article/ArticleHeader';
 import ArticleContent from 'components/Article/ArticleContent';
-import { ArticleFrontmatterType } from 'shared/type';
+import { ArticleFrontmatterType, SocialIdType } from 'shared/type';
 import CommentWidget from 'components/Article/CommentWidget';
+
+interface SiteMetaDateType extends SocialIdType {
+  siteTitle: string;
+  siteRepo: string;
+}
 
 interface ArticlePageType {
   node: {
@@ -14,6 +19,9 @@ interface ArticlePageType {
 
 interface ArticleTemplateProps {
   data: {
+    site: {
+      siteMetadata: SiteMetaDateType;
+    };
     allMarkdownRemark: {
       edges: ArticlePageType[];
     };
@@ -25,6 +33,9 @@ interface ArticleTemplateProps {
 
 const ArticleTemplate: React.FC<ArticleTemplateProps> = ({
   data: {
+    site: {
+      siteMetadata: { siteTitle, siteRepo, githubId, linkedInId, twitterId },
+    },
     allMarkdownRemark: { edges },
   },
   location: { href },
@@ -37,10 +48,18 @@ const ArticleTemplate: React.FC<ArticleTemplateProps> = ({
   } = edges[0];
 
   return (
-    <Container title={title} description={summary} url={href}>
+    <Container
+      siteTitle={siteTitle}
+      title={title}
+      description={summary}
+      githubId={githubId}
+      linkedInId={linkedInId}
+      twitterId={twitterId}
+      url={href}
+    >
       <ArticleHeader title={title} date={date} categories={categories} />
       <ArticleContent html={html} />
-      <CommentWidget />
+      <CommentWidget repo={siteRepo} />
     </Container>
   );
 };
@@ -49,6 +68,15 @@ export default ArticleTemplate;
 
 export const queryMarkdownDataBySlug = graphql`
   query queryMarkdownDataBySlug($slug: String) {
+    site {
+      siteMetadata {
+        siteTitle
+        siteRepo
+        githubId
+        linkedInId
+        twitterId
+      }
+    }
     allMarkdownRemark(filter: { fields: { slug: { eq: $slug } } }) {
       edges {
         node {

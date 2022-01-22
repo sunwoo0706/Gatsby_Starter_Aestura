@@ -4,6 +4,13 @@ import { graphql } from 'gatsby';
 import queryString, { ParsedQuery } from 'query-string';
 import { useMemo } from 'react';
 import { Container } from 'components/Common/Container';
+import { SocialIdType } from 'shared/type';
+
+interface siteMetaDateType extends SocialIdType {
+  siteTitle: string;
+  description: string;
+  siteUrl: string;
+}
 
 interface IndexPageProps {
   location: {
@@ -11,11 +18,7 @@ interface IndexPageProps {
   };
   data: {
     site: {
-      siteMetadata: {
-        title: string;
-        description: string;
-        siteUrl: string;
-      };
+      siteMetadata: siteMetaDateType;
     };
     allMarkdownRemark: {
       edges: ArticleType[];
@@ -27,7 +30,14 @@ const IndexPage: React.FC<IndexPageProps> = ({
   location: { search },
   data: {
     site: {
-      siteMetadata: { title, description, siteUrl },
+      siteMetadata: {
+        siteTitle,
+        description,
+        githubId,
+        linkedInId,
+        twitterId,
+        siteUrl,
+      },
     },
     allMarkdownRemark: { edges },
   },
@@ -64,7 +74,15 @@ const IndexPage: React.FC<IndexPageProps> = ({
   );
 
   return (
-    <Container title={title} description={description} url={siteUrl}>
+    <Container
+      siteTitle={siteTitle}
+      title={siteTitle}
+      description={description}
+      githubId={githubId}
+      linkedInId={linkedInId}
+      twitterId={twitterId}
+      url={siteUrl}
+    >
       <Main
         selectedCategory={selectedCategory}
         categoryList={categoryList}
@@ -78,9 +96,12 @@ export const getPostList = graphql`
   query getPostList {
     site {
       siteMetadata {
-        title
+        siteTitle
         description
         siteUrl
+        githubId
+        linkedInId
+        twitterId
       }
     }
     allMarkdownRemark(
