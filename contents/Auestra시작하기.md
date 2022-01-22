@@ -1,29 +1,9 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="resource/AesturaLogo.png" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby-Starter-Aestura
-</h1>
-
-**Gatsby-Starter-Aestura** 는 Gatsby로 구동되는 심플한 UI 를 지닌 Blog template 입니다.
-
-![메인페이지 미리보기 사진](resource/mockup.png)
-
-## 기능
-
-- Comment feature (uttrances)
-- github, linkedIn, twitter 링크 연결
-- sitemap.xml, robots.txt 자동 생성
-- 코드 하이라이팅
-- 무한 스크롤
-- 카테고리 필터링
-
 ---
-
-## 시작
+date: '2004-07-06'
+title: 'Aestura 시작하기'
+categories: ['Start', '처음시작하기', 'Aestura']
+summary: 'Aestura 테마를 이용해서 블로그를 배포해보자 !'
+---
 
 ### 실행
 
@@ -41,11 +21,11 @@ $ yarn develop
 # /gatsby-config.js
 
 siteMetadata: {
-  siteTitle: ``, // Aesture 블로그
-  description: ``, // 프론트엔드 개발자 땡땡의 블로그입니다.
-  author: ``, // 홍길동
-  siteUrl: '', // https://website.com
-  siteRepo: '', // userName/userName.github.io
+  siteTitle: ``, // 사이트의 title을 작성해주세요.
+  description: ``, // 예) 프론트엔드 개발자 땡땡의 블로그입니다.
+  author: ``, // 예) 홍길동
+  siteUrl: '', // 예) https://website.com
+  siteRepo: '', // 예) userName/userName.github.io
   githubId: '', // 만약 존재하지 않으면 비워주세요
   linkedInId: '', //
   twitterId: '', //
