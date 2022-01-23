@@ -21,9 +21,9 @@ $ yarn develop
 # /gatsby-config.js
 
 siteMetadata: {
-  siteTitle: ``, // 사이트의 title을 작성해주세요.
-  description: ``, // 예) 프론트엔드 개발자 땡땡의 블로그입니다.
-  author: ``, // 예) 홍길동
+  siteTitle: '', // 사이트의 title을 작성해주세요.
+  description: '', // 예) 프론트엔드 개발자 땡땡의 블로그입니다.
+  author: '', // 예) 홍길동
   siteUrl: '', // 예) https://website.com
   siteRepo: '', // 예) userName/userName.github.io
   githubId: '', // 만약 존재하지 않으면 비워주세요
@@ -32,7 +32,7 @@ siteMetadata: {
 },
 ```
 
-> siteRepo는 Uttrance에 사용됩니다. 쓰고 싶지 않다면 비워두시면 됩니다.
+> siteRepo는 uttrances에 사용됩니다. 쓰고 싶지 않다면 비워두시면 됩니다.
 
 ### 블로그 글 쓰기
 
