@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 
-export const codeHighlighTheme = css`
+export const codeHighlightTheme = css`
   code[class*='language-'],
   pre[class*='language-'] * {
     color: #00193a;
@@ -76,7 +76,7 @@ export const codeHighlighTheme = css`
   .token.class-name,
   .token.constant,
   .token.symbol {
-    color: #4c81c9;
+    color: #0b409c;
   }
 
   .token.selector,
