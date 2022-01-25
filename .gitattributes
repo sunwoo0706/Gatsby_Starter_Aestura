@@ -5,6 +5,7 @@ contents/* linguist-vendored
 
 gatsby-browser.js linguist-vendored
 gatsby-config.js linguist-vendored
+gatsby-meta-config.js linguist-vendored
 gatsby-node.js linguist-vendored
 gatsby-ssr.js linguist-vendored
 
