@@ -20,7 +20,7 @@ const CommentWidget: React.FC<CommentWidgetProps> = ({ repo }) => {
   const element = createRef<HTMLDivElement>();
 
   useEffect(() => {
-    if (element.current === null || repo === null) return;
+    if (element.current === null) return;
 
     const utterances: HTMLScriptElement = document.createElement('script');
 
