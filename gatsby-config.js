@@ -1,14 +1,8 @@
+const metaConfig = require('./gatsby-meta-config');
+
 module.exports = {
-  siteMetadata: {
-    siteTitle: '에스테라 테마',
-    description: '프론트엔드 개발자인 홍길동의 블로그입니다.',
-    author: '홍길동',
-    siteUrl: 'https://website-link.com',
-    siteRepo: '', // userName/userName.github.io
-    githubId: '', // 만약 존재하지 않으면 비워주세요
-    linkedInId: '',
-    twitterId: '',
-  },
+  siteMetadata: metaConfig,
+
   plugins: [
     {
       resolve: 'gatsby-plugin-sitemap',
