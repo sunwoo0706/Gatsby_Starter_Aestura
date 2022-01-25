@@ -12,7 +12,7 @@
 
 ## 기능
 
-- Comment feature (uttrances)
+- Comment feature (utterances)
 - github, linkedIn, twitter 링크 연결
 - sitemap.xml, robots.txt 자동 생성
 - 전용 코드 하이라이팅 테마
@@ -122,7 +122,7 @@ $ yarn add gh-pages -D
 }
 ```
 
-github pages로 배포했다면 기본 URL은 `https://[username].github.io/`으로 설정되므로 `gatsby-config.js` 파일의 `siteUrl` 속성값을 변경해주세요.
+github pages로 배포했다면 기본 URL은 `https://[username].github.io/` 으로 설정되므로 `gatsby-config.js` 파일의 `siteUrl` 속성값을 변경해주세요.
 
 또한, `gatsby-plugin-canonical-urls` 옵션 부분도 똑같이 변경해주세요.
 
@@ -154,7 +154,7 @@ $ yarn deploy
 
 `Published` 가 뜬다면 배포가 성공적으로 이루어진겁니다.
 
-블로그를 배포한 `Repository`의 Setting 탭으로 들어가주세요.
+블로그를 배포한 `Repository` 의 Setting 탭으로 들어가주세요.
 
 아래로 스크롤을 내리면 github pages 설정 구간이 나오게 될 텐데, 아래 사직과 같이 웹 사이트가 배포 되었다는 표시가 뜨는지 확인하세요.
 
