@@ -1,8 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="resource/AesturaLogo.png" width="60" />
-  </a>
+    <img alt="Aestura Logo" src="resource/AesturaLogo.png" width="60" />
 </p>
 <h1 align="center">
   Gatsby-Starter-Aestura
@@ -17,7 +15,7 @@
 - Comment feature (uttrances)
 - github, linkedIn, twitter 링크 연결
 - sitemap.xml, robots.txt 자동 생성
-- 코드 하이라이팅
+- 전용 코드 하이라이팅 테마
 - 무한 스크롤
 - 카테고리 필터링
 
@@ -41,18 +39,16 @@ $ yarn develop
 # /gatsby-config.js
 
 siteMetadata: {
-  siteTitle: '', // Aesture 블로그
-  description: '', // 프론트엔드 개발자 땡땡의 블로그입니다.
-  author: '', // 홍길동
-  siteUrl: '', // https://website.com
-  siteRepo: '', // userName/userName.github.io
-  githubId: '', // 만약 존재하지 않으면 비워주세요
-  linkedInId: '', //
-  twitterId: '', //
+  siteTitle: '', // Aesture 블로그의 title로 사용됩니다.
+  description: '', // 블로그에 대한 설명을 작성해주세요.
+  author: '', // 이름을 작성해주세요.
+  siteUrl: '', // 사이트의 URL을 작성해주세요.
+  siteRepo: '', // uttrances를 위한 속성입니다.
+  githubId: '', // github ID를 작성해주세요.
+  linkedInId: '', // linkedIn 프로필 URL의 맨마지막 path 값을 작성해주세요.
+  twitterId: '', // 트위터 ID를 작성해주세요.
 },
 ```
-
-> siteRepo는 uttrances에 사용됩니다. 쓰고 싶지 않다면 비워두시면 됩니다.
 
 ### 블로그 글 쓰기
 
@@ -70,6 +66,22 @@ categories: ['Web', 'SEO', 'Optimization'] // 카테고리를 작성해주세요
 summary: '검색 엔진 최적화 작업을 어떻게 하는지 알아보자.' // 메인 페이지에서 보일 아티클의 요약글입니다.
 ---
 ```
+
+### 댓글 기능 (uttrances)
+
+utterances는 github의 issue 기능을 통한 댓글 기능을 제공하는 어플리케이션입니다.
+
+github에 가입되어있기만 하면 사용할 수 있어 사용 방법이 매우 간편하고, 용량도 가벼워 여러 정적 사이트에서 많이 사용됩니다.
+
+#### 사전 설정
+
+utterances를 사용하기 위해서는 Github에 utterances 어플리케이션을 추가해줘야 합니다.
+
+[uttrances 어플리케이션 링크](https://github.com/apps/utterances)에 접속하여 `install` 버튼을 통해 설치해주세요.
+
+그렇게 되면 권한을 설정할 레포지터리를 지정할 수 있는 페이지가 나오게 되는데 모든 레포지토리에 권한을 부여해도 되지만, 해당 블로그 레포지터리에만 권한을 부여하는게 좋습니다.
+
+그리고 앞서 설명했던 `gatsby-config.js` / `siteMetaData` 의 `siteRepo` 부분에 `userName/repoName` 형식으로 작성해주시면 됩니다. 그리고 댓글을 달아 이슈가 잘 생성되는지 확인해보세요.
 
 ### 배포
 
