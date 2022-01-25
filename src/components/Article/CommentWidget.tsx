@@ -1,6 +1,5 @@
 import { createRef, useEffect } from 'react';
-
-const src = 'https://utteranc.es/client.js';
+import { css } from '@emotion/react';
 
 interface CommentWidgetProps {
   repo: string;
@@ -15,6 +14,21 @@ interface UtterancesAttributesType {
   crossorigin: string;
   async: string;
 }
+
+const src = 'https://utteranc.es/client.js';
+
+const CommentWidgetWrapper = css`
+  padding: 4rem 0;
+
+  p {
+    width: 100%;
+    padding: 1rem 0;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #0b409c;
+    border-top: 0.2rem solid #0b409c;
+  }
+`;
 
 const CommentWidget: React.FC<CommentWidgetProps> = ({ repo }) => {
   const element = createRef<HTMLDivElement>();
@@ -41,7 +55,12 @@ const CommentWidget: React.FC<CommentWidgetProps> = ({ repo }) => {
     element.current.appendChild(utterances);
   }, []);
 
-  return <div ref={element} />;
+  return (
+    <div css={CommentWidgetWrapper}>
+      <p>Comments</p>
+      <div ref={element} />
+    </div>
+  );
 };
 
 export default CommentWidget;
