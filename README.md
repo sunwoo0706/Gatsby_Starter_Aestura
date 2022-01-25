@@ -36,9 +36,9 @@ $ yarn develop
 ### 블로그 정보 설정
 
 ```js
-# /gatsby-config.js
+# /gatsby-meta-config.js
 
-siteMetadata: {
+{
   siteTitle: '', // Aesture 블로그의 title로 사용됩니다.
   description: '', // 블로그에 대한 설명을 작성해주세요.
   author: '', // 이름을 작성해주세요.
@@ -81,7 +81,7 @@ utterances를 사용하기 위해서는 Github에 utterances 어플리케이션�
 
 그렇게 되면 권한을 설정할 레포지터리를 지정할 수 있는 페이지가 나오게 되는데 모든 레포지토리에 권한을 부여해도 되지만, 해당 블로그 레포지터리에만 권한을 부여하는게 좋습니다.
 
-그리고 앞서 설명했던 `gatsby-config.js` / `siteMetaData` 의 `siteRepo` 부분에 `userName/repoName` 형식으로 작성해주시면 됩니다. 그리고 댓글을 달아 이슈가 잘 생성되는지 확인해보세요.
+그리고 앞서 설명했던 `gatsby-meta-config.js` 의 `siteRepo` 부분에 `userName/repoName` 형식으로 작성해주시면 됩니다. 그리고 댓글을 달아 이슈가 잘 생성되는지 확인해보세요.
 
 ### 배포
 
@@ -146,9 +146,7 @@ module.exports = {
 };
 ```
 
-이제 모든 설정은 끝났습니다.
-
-다음 커맨드를 통하여 배포해주세요.
+마지막으로 다음 커맨드를 통하여 배포해주세요.
 
 ```sh
 $ yarn deploy
