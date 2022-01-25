@@ -26,7 +26,6 @@ const CommentWidgetWrapper = css`
     font-weight: 800;
     font-size: 1.2rem;
     color: #0b409c;
-    border-top: 0.2rem solid #0b409c;
   }
 `;
 
