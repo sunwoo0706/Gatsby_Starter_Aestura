@@ -40,7 +40,7 @@ const CommentWidget: React.FC<CommentWidgetProps> = ({ repo }) => {
     const attributes: UtterancesAttributesType = {
       src,
       repo,
-      'issue-term': 'pathname',
+      'issue-term': 'title',
       label: 'Comment',
       theme: `github-light`,
       crossorigin: 'anonymous',
