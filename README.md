@@ -19,6 +19,8 @@
 - 무한 스크롤
 - 카테고리 필터링
 
+> Gatsby-Starter-Aestura는 [SUIT](http://sunn.us/suit/) font를 사용했습니다.
+
 ---
 
 ## 시작
@@ -102,8 +104,6 @@ $ yarn add gh-pages -D
 ```json
 "deploy": "gatsby build && gh-pages -d public -b master"
 ```
-
-> master 부분에 본인의 default 브랜치를 작성해주세요.
 
 ```json
 {
