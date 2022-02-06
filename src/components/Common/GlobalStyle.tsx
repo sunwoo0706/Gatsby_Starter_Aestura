@@ -4,13 +4,14 @@ import { codeHighlightTheme } from 'shared/codeHighlighting';
 const defaultStyle = css`
   @import url('http://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css');
 
+  font-family: 'SUIT', sans-serif;
+
   ${codeHighlightTheme}
 
   * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'SUIT', sans-serif;
   }
 
   html,

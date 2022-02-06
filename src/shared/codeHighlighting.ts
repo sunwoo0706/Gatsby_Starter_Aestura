@@ -2,7 +2,7 @@ import { css } from '@emotion/react';
 
 export const codeHighlightTheme = css`
   code[class*='language-'],
-  pre[class*='language-'] * {
+  pre[class*='language-'] {
     color: #00193a;
     background: none;
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
