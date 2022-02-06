@@ -5,6 +5,7 @@ import queryString, { ParsedQuery } from 'query-string';
 import { useMemo } from 'react';
 import { Container } from 'components/Common/Container';
 import { SocialIdType } from 'shared/type';
+import { WhoMakeThis } from 'components/WhoMakeThis/WhoMakeThis';
 
 interface siteMetaDateType extends SocialIdType {
   siteTitle: string;
@@ -88,6 +89,7 @@ const IndexPage: React.FC<IndexPageProps> = ({
         categoryList={categoryList}
         articles={edges}
       />
+      <WhoMakeThis />
     </Container>
   );
 };

@@ -4,6 +4,7 @@ import { ArticleHeader } from 'components/Article/ArticleHeader';
 import ArticleContent from 'components/Article/ArticleContent';
 import { ArticleFrontmatterType, SocialIdType } from 'shared/type';
 import CommentWidget from 'components/Article/CommentWidget';
+import { WhoMakeThis } from 'components/WhoMakeThis/WhoMakeThis';
 
 interface SiteMetaDateType extends SocialIdType {
   siteTitle: string;
@@ -60,6 +61,7 @@ const ArticleTemplate: React.FC<ArticleTemplateProps> = ({
       <ArticleHeader title={title} date={date} categories={categories} />
       <ArticleContent html={html} />
       <CommentWidget repo={siteRepo} />
+      <WhoMakeThis />
     </Container>
   );
 };
