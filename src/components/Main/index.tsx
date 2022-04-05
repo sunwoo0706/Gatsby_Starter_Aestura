@@ -1,6 +1,6 @@
 import { ArticleList } from './ArticleList';
 import { CategoryList } from './CategotyList';
-import { CategoryListProps, ArticleType } from 'utils/Type';
+import { CategoryListProps, ArticleType } from 'shared/Type';
 import React from 'react';
 
 interface MainProps extends CategoryListProps {

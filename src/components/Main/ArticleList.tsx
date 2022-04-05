@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { Article } from './Article';
-import { ArticleType } from 'utils/Type';
+import { ArticleType } from 'shared/Type';
 import useInfiniteScroll, {
   useInfiniteScrollType,
 } from 'hooks/useInfiniteScroll';

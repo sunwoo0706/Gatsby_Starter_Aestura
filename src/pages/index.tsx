@@ -1,5 +1,5 @@
 import { Main } from 'components/Main';
-import { ArticleType, CategoryListProps } from 'utils/Type';
+import { ArticleType, CategoryListProps } from 'shared/Type';
 import { graphql } from 'gatsby';
 import queryString, { ParsedQuery } from 'query-string';
 import { useMemo } from 'react';

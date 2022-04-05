@@ -1,6 +1,6 @@
 import { css } from '@emotion/react';
 import { CategoryTag } from './CategoryTag';
-import { CategoryListProps } from 'utils/Type';
+import { CategoryListProps } from 'shared/Type';
 
 const CategoryListStyle = css`
   position: sticky;
