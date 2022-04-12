@@ -1,5 +1,6 @@
 import { createRef, useEffect } from 'react';
 import { css } from '@emotion/react';
+import { pallete } from 'shared/Theme';
 
 interface CommentWidgetProps {
   repo: string;
@@ -18,14 +19,14 @@ interface UtterancesAttributesType {
 const src = 'https://utteranc.es/client.js';
 
 const CommentWidgetWrapper = css`
-  padding: 4rem 0;
+  padding-top: 4rem;
 
   p {
     width: 100%;
     padding: 1rem 0;
     font-weight: 800;
     font-size: 1.2rem;
-    color: #0b409c;
+    color: ${pallete.scheme.secondary};
   }
 `;
 

@@ -1,6 +1,7 @@
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { Date } from 'components/Common/Date';
+import { pallete } from 'shared/Theme';
 import { ArticleFrontmatterType } from 'shared/type';
 
 interface ArticleHeaderProps extends Omit<ArticleFrontmatterType, 'summary'> {}
@@ -34,7 +35,7 @@ const ListWrapper = styled.ul`
   li {
     display: inline-block;
 
-    color: #0b409c;
+    color: ${pallete.scheme.secondary};
     margin-right: 0.75rem;
     &:last-child {
       margin-right: 0;

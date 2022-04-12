@@ -1,33 +1,28 @@
 import styled from '@emotion/styled';
 
 const WhoMakeThisWrapper = styled.div`
-  position: fixed;
-  z-index: 10;
-  bottom: 22px;
-  right: 36px;
-  padding: 8px 12px;
+  width: 100%;
+  height: 4rem;
   display: flex;
   align-items: center;
-  background-color: white;
-  border-radius: 70px;
-  box-shadow: 0 4px 20px 0 rgb(0 0 0 / 8%);
-  border: 1px solid hsla(0, 0%, 100%, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  user-select: none;
-  &:hover {
-    transform: scale(1.1);
+  justify-content: center;
+  margin-top: 4rem;
+  a:hover {
+    transition: color 0.4s;
+    color: #646464;
   }
 `;
 
 export const WhoMakeThis: React.FC = () => {
   return (
-    <a
-      href={`https://github.com/sunwoo0706/Gatsby_Starter_Aestura`}
-      target="_blank"
-      rel="nofollow"
-    >
-      <WhoMakeThisWrapper>made by Aestura</WhoMakeThisWrapper>
-    </a>
+    <WhoMakeThisWrapper>
+      <a
+        href={`https://github.com/sunwoo0706/Gatsby_Starter_Aestura`}
+        target="_blank"
+        rel="nofollow"
+      >
+        Designed by Gastby_Starter_Aestura
+      </a>
+    </WhoMakeThisWrapper>
   );
 };

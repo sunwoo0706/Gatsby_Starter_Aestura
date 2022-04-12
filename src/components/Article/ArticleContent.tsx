@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { pallete } from 'shared/Theme';
 
 interface PostContentProps {
   html: string;
@@ -83,7 +84,7 @@ const MarkdownRenderer = styled.div`
 
   // Adjust Link Element Style
   a {
-    color: #0b409c;
+    color: ${pallete.scheme.secondary};
     text-decoration: underline;
     word-break: break-word;
   }

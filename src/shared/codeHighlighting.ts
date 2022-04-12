@@ -1,4 +1,5 @@
 import { css } from '@emotion/react';
+import { pallete } from './Theme';
 
 export const codeHighlightTheme = css`
   code[class*='language-'],
@@ -59,7 +60,7 @@ export const codeHighlightTheme = css`
   .token.attr-name,
   .token.namespace,
   .token.deleted {
-    color: #0b409c;
+    color: ${pallete.scheme.secondary};
   }
 
   .token.function-name {
@@ -69,14 +70,14 @@ export const codeHighlightTheme = css`
   .token.boolean,
   .token.number,
   .token.function {
-    color: #0b409c;
+    color: ${pallete.scheme.secondary};
   }
 
   .token.property,
   .token.class-name,
   .token.constant,
   .token.symbol {
-    color: #0b409c;
+    color: ${pallete.scheme.secondary};
   }
 
   .token.selector,
@@ -98,7 +99,7 @@ export const codeHighlightTheme = css`
   .token.operator,
   .token.entity,
   .token.url {
-    color: #0b409c;
+    color: ${pallete.scheme.secondary};
   }
 
   .token.important,
@@ -114,6 +115,6 @@ export const codeHighlightTheme = css`
   }
 
   .token.inserted {
-    color: #0b409c;
+    color: ${pallete.scheme.secondary};
   }
 `;

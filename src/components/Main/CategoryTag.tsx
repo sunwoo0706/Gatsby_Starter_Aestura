@@ -2,6 +2,7 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 import { ReactNode } from 'react';
+import { pallete } from 'shared/Theme';
 
 interface CategoryTagProps {
   name: string;
@@ -30,7 +31,7 @@ const CategoryTagWrapper = styled(({ selected, ...props }: GatsbyLinkProps) => (
 ))<CategoryTagWrapperProps>`
   background: white;
   border: 0.125rem solid #10316b;
-  color: #0b409c;
+  color: ${pallete.scheme.secondary};
   border-radius: 0.5rem;
   text-align: center;
   font-size: 0.75rem;

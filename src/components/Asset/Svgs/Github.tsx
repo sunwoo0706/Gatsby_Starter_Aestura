@@ -1,11 +1,12 @@
 import { css } from '@emotion/react';
+import { pallete } from 'shared/Theme';
 
 const SvgStyle = css`
   &:hover {
     cursor: pointer;
     & > path {
       transition: fill 0.4s ease;
-      fill: #0b409c;
+      fill: ${pallete.scheme.secondary};
     }
   }
 `;
