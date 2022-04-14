@@ -32,7 +32,7 @@ siteMetadata: {
 },
 ```
 
-> siteRepo는 uttrances에 사용됩니다. 쓰고 싶지 않다면 비워두시면 됩니다.
+> siteRepo는 utterances에 사용됩니다. 쓰고 싶지 않다면 비워두시면 됩니다.
 
 ### 블로그 글 쓰기
 

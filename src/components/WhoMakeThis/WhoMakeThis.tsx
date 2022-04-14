@@ -3,8 +3,8 @@ import { pallete } from 'shared/Theme';
 
 const WhoMakeThisWrapper = styled.div`
   width: 100%;
-  margin-top: 2.2rem;
-  padding: 2.8rem 0;
+  margin-top: 1.875rem;
+  padding: 3rem 0;
   display: flex;
   align-items: center;
   justify-content: center;

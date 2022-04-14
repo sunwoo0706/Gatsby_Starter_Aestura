@@ -45,7 +45,7 @@ $ yarn develop
   description: '', // 블로그에 대한 설명을 작성해주세요.
   author: '', // 이름을 작성해주세요.
   siteUrl: '', // 사이트의 URL을 작성해주세요.
-  siteRepo: '', // uttrances를 위한 속성입니다.
+  siteRepo: '', // utterances를 위한 속성입니다.
   githubId: '', // github ID를 작성해주세요.
   linkedInId: '', // linkedIn 프로필 URL의 맨마지막 path 값을 작성해주세요.
   twitterId: '', // 트위터 ID를 작성해주세요.
@@ -69,7 +69,7 @@ summary: '검색 엔진 최적화 작업을 어떻게 하는지 알아보자.' /
 ---
 ```
 
-### 댓글 기능 (uttrances)
+### 댓글 기능 (utterances)
 
 utterances는 github의 issue 기능을 통한 댓글 기능을 제공하는 어플리케이션입니다.
 
@@ -79,7 +79,7 @@ github에 가입되어있기만 하면 사용할 수 있어 사용 방법이 매
 
 utterances를 사용하기 위해서는 Github에 utterances 어플리케이션을 추가해줘야 합니다.
 
-[uttrances 어플리케이션 링크](https://github.com/apps/utterances)에 접속하여 `install` 버튼을 통해 설치해주세요.
+[utterances 어플리케이션 링크](https://github.com/apps/utterances)에 접속하여 `install` 버튼을 통해 설치해주세요.
 
 그렇게 되면 권한을 설정할 레포지터리를 지정할 수 있는 페이지가 나오게 되는데 모든 레포지토리에 권한을 부여해도 되지만, 해당 블로그 레포지터리에만 권한을 부여하는게 좋습니다.
 

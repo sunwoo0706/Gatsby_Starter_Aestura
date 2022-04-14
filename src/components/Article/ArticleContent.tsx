@@ -33,7 +33,7 @@ const MarkdownRenderer = styled.div`
   * + h1,
   * + h2,
   * + h3 {
-    margin-top: 5rem;
+    margin-top: 1.875rem;
   }
 
   hr + h1,
@@ -62,7 +62,7 @@ const MarkdownRenderer = styled.div`
 
   // Adjust Quotation Element Style
   blockquote {
-    margin: 1.875rem 0;
+    margin: 0.6rem 0;
     padding: 0.25rem 0.875rem;
     border-left: 0.125rem solid #000000;
     font-weight: 700;
@@ -79,7 +79,7 @@ const MarkdownRenderer = styled.div`
   // Adjust Horizontal Rule style
   hr {
     border: 1px solid #000000;
-    margin: 6.25rem 0;
+    margin: 3rem 0;
   }
 
   // Adjust Link Element Style
@@ -93,12 +93,18 @@ const MarkdownRenderer = styled.div`
     width: 100%;
   }
 
+  code[class*='language-text'] {
+    font-size: 0.8rem;
+  }
+
   // Adjust Code Style
   pre[class*='language-'] {
-    margin: 1.875rem 0;
+    margin: 1.425rem 0;
     padding: 0.875rem;
-    font-size: 0.875rem;
     border-radius: 0.5rem;
+    code {
+      font-size: 0.875rem;
+    }
 
     ::-webkit-scrollbar-thumb {
       background: rgba(255, 255, 255, 0.5);
