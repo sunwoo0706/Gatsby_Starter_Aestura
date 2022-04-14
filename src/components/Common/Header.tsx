@@ -64,6 +64,7 @@ export const Header: React.FC<HeaderProps> = ({
               href={`https://github.com/${githubId}`}
               target="_blank"
               rel="nofollow"
+              aria-label="깃허브 프로필 바로가기 버튼"
             >
               <GithubIcon />
             </a>
@@ -73,6 +74,7 @@ export const Header: React.FC<HeaderProps> = ({
               href={`https://linkedin.com/in/${linkedInId}`}
               target="_blank"
               rel="nofollow"
+              aria-label="링크드인 프로필 바로가기 버튼"
             >
               <LinkedInIcon />
             </a>
@@ -82,6 +84,7 @@ export const Header: React.FC<HeaderProps> = ({
               href={`https://twitter.com/${twitterId}`}
               target="_blank"
               rel="nofollow"
+              aria-label="트위터 프로필 바로가기 버튼"
             >
               <TwitterIcon />
             </a>
