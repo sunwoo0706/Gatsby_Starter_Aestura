@@ -58,6 +58,12 @@ const CommentWidget: React.FC<CommentWidgetProps> = ({ repo }) => {
   return (
     <div css={CommentWidgetWrapper}>
       <p>Comments</p>
+      <hr
+        css={css`
+          border-top: 2px solid ${pallete.scheme.secondary};
+          margin-bottom: 3rem;
+        `}
+      />
       <div ref={element} />
     </div>
   );
