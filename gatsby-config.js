@@ -26,7 +26,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: 'https://website-link.com/',
+        siteUrl: metaConfig.siteUrl,
         stripQueryString: true,
       },
     },
